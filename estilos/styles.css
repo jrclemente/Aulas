@@ -1,0 +1,138 @@
+   /* CSS reset(reiniciar) */
+   *,
+   *:before,
+   *:after {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+   body {
+       /*1.5rem=15px*/
+       font-size: 1.5rem;
+       font-family: 'Roboto', sans-serif;
+       /* Cores em degradê */
+       background-image: linear-gradient(to right, #4c6c81, #083263);
+   }
+
+   header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+
+       /* Preenchimento: top/direita/esquerda */
+       padding: 0.5rem 2.4rem;
+       /* 2.4rem = 24px*/
+       border: 1px solid rgba(9, 218, 30, 0.847);
+       /* Preenchimento: em baixo */
+       padding-bottom: 5px;
+   }
+  
+   header .titulo {
+       text-align: center;
+   }
+
+   .titulo {
+       color: azure;
+   }
+
+   .pontos-turisticos{
+    display: flex;
+    justify-content: center;
+   }
+   
+   /* .pontos-turisticos h1{
+    color: red;
+   } */
+
+   .recife {
+       padding-top: 15px;
+       padding-bottom: 15px;
+   }
+
+   .marco-zero,
+   .locais {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+
+       padding-top: 15px;
+       padding-bottom: 15px;
+   }
+
+   .outros {
+       text-align: center;
+       padding-top: 15px;
+       padding-bottom: 15px;
+   }
+
+   footer {
+       padding-top: 15px;
+       text-align: center;
+       border: 1px solid rgba(9, 218, 30, 0.847);
+   }
+
+   footer ul {
+       display: flex;
+       justify-content: space-evenly;
+   }
+
+   ul {
+       list-style: none;
+       /* Define um espaçamento entre os itens */
+       gap: 3rem;
+   }
+
+   img {
+       border-radius: 10px;
+       max-width: 100%;
+       height: auto;
+   }
+
+   .video {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       padding-bottom: 15px;
+   }
+
+   iframe {
+       border-radius: 10px;
+   }
+
+   a {
+       text-decoration: none;
+       transition: all 0.3s ease;
+   }
+
+   a[href] {
+       color: azure;
+   }
+
+   /* Definição para gerar um botão sem utilizar o type: button */
+   .botao {
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+
+       padding: 1rem 2.6rem;
+
+       background: grey;
+       border-radius: 5px;
+       border: 1px solid rgba(9, 218, 30, 0.847);
+   }
+
+   a:hover {
+       color: white;
+       background-color: #1c87c9;
+       border: 1px solid rgba(9, 218, 30, 0.847);
+       /* border-radius: faz com que a borda fique arredondada */
+       border-radius: 5px;
+
+       transform: scale(0.9);
+   }
+
+   .texto{
+    text-align: justify;
+    text-indent: 1.5rem;
+   }
