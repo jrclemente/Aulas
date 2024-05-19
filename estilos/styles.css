@@ -8,8 +8,14 @@
    }
 
    body {
-       /*1.5rem=15px*/
+       /*1.5rem=24px*/
        font-size: 1.5rem;
+       /* 
+       Uma prática comum com muitas “famílias de fonte” para o 
+       caso do navegador por algum motivo não conseguir carregar 
+       a primeira fonte (ex. Roboto), ela optará pela segunda fonte (ex. sans-serif).
+       Esta segunda opção é conhecida como font fallback.
+       */
        font-family: 'Roboto', sans-serif;
        /* Cores em degradê */
        background-image: linear-gradient(to right, #4c6c81, #083263);
@@ -22,7 +28,7 @@
 
        /* Preenchimento: top/direita/esquerda */
        padding: 0.5rem 2.4rem;
-       /* 2.4rem = 24px*/
+       /* 0.5rem = 8px / 2.4rem = 38,40px*/
        border: 1px solid rgba(9, 218, 30, 0.847);
        /* Preenchimento: em baixo */
        padding-bottom: 5px;
@@ -40,7 +46,7 @@
     display: flex;
     justify-content: center;
    }
-   
+
    /* .pontos-turisticos h1{
     color: red;
    } */
